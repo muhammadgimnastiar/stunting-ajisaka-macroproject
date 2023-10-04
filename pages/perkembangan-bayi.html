@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Pemeriksaan</title>
+
+    <!-- Mengubungkan ke file css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/perkembangan-bayi_style.css" />
+    <!-- Fonts inter -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Signika"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container-fluid mx-lg-4 m-sm-0">
+        <a class="navbar-brand" href="#"
+          ><img src="/images/Logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-primary"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/tentang.html">Tentang</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Perkembangan Bayi
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="konsultasi.html"
+                      >Konsultasi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="jadwal.html"
+                      >Jadwal Pemeriksaan</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="menu-sehat.html"
+                      >Menu Sehat</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="perkembangan-bayi.html"
+                      >Perkembangan Bayi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="komunitas.html">Komunitas</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="Informasi" class="nav-link"> Informasi </a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-success"
+              type="button"
+              onclick="window.location.href='login.html'"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="img-bayi">
+      <div class="container">
+        <div class="row">
+          <!-- Kolom kiri -->
+          <div class="col col-lg-6 col-sm-12">
+            <div class="p-sm-3 p-md-2 p-lg-5 my-3 rounded">
+              <!-- Title and sub title halaman -->
+              <h1 class="fw-bolder text-light">Perkembangan Bayi</h1>
+              <h5 class="text-light">
+                Pantau perkembangan dan kesehatan buah hati Anda
+              </h5>
+
+              <form class="row g-3 bg-light rounded-4 my-5 p-2">
+                <div class="col-md-12">
+                  <label for="validationServerUsername" class="form-label"
+                    >Berat badan</label
+                  >
+                  <div class="input-group has-validation">
+                    <input
+                      type="text"
+                      class="form-control is-valid"
+                      id="validationServerUsername"
+                      placeholder="0"
+                      aria-describedby="inputGroupPrepend3"
+                      required
+                    />
+                    <span class="input-group-text" id="inputGroupPrepend3"
+                      >kg</span
+                    >
+                    <div class="valid-feedback">Please choose a username.</div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="validationServer04" class="form-label"
+                    >Jenis Kelamin</label
+                  >
+                  <select
+                    class="form-select is-invalid"
+                    id="validationServer04"
+                    required
+                  >
+                    <option selected disabled value="">Pilih...</option>
+                    <option value="pria">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
