@@ -1,0 +1,78 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #4986ffaf;
+}
+
+.regist{
+    height: 100vh;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+}
+
+.regist-form label{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 8px;
+    color: #000000;
+}
+
+.regist-form input{
+    box-sizing: border-box;
+    background: rgba(241, 241, 241, 0.945098);
+    border: 1px solid #6499E9;
+    border-radius: 10px;
+}
+
+.regist-form span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.regist-form span a{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.regist-form .daftar{
+    width: 100%;
+    height: 48px;
+    background: #053B50;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 30px;
+}
+.regist-form .daftar-google{
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    color: #000000;
+    margin: 10px 0 10px 0;
+}
+.regist-form .daftar-fb{
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    color: #000000;
+    margin-bottom: 10px;
+}
