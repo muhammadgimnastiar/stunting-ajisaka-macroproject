@@ -1,0 +1,19 @@
+.nav-link {
+    font-size: 20px;
+}
+
+
+
+.title {
+    letter-spacing: -1.2pt;
+}
+
+.bg-secondary2 {
+    --bs-bg-opacity: 1;
+    background-color: #A4C3FF !important
+}
+
+.text-bg-tersier {
+    color: #424E66 !important;
+    background-color: #DBE7FF !important
+}
