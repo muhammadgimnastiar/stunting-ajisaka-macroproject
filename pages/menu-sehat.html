@@ -97,9 +97,6 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a href="Informasi" class="nav-link"> Informasi </a>
-              </li>
             </ul>
             <button
               class="btn btn-success"
@@ -147,101 +144,39 @@
     </div>
 
     <!-- Menu -->
-    <div class="menu">
-      <div class="food-items">
-        <img src="/images/menu/Picture1.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Bubur Susu Alpukat</h5>
-          </div>
-          <p>
-            Alpukat merupakan sumber serat, vitamin C, vitamin A, dan vitamin E
-            yang baik untuk meningkatkan sistem kekebalan tubuh. Dibandingkan
-            dengan buah-buahan lain untuk MPASI, alpukat dianggap memiliki nilai
-            gizi tertinggi.
-          </p>
-          <button class="button" onclick="window.location.href='alpukat.html'">
-            Selengkapnya
-          </button>
-        </div>
-      </div>
-
-      <div class="food-items">
-        <img src="/images/menu/Picture2.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Bubur Susu Kedelai</h5>
-          </div>
-          <p>
-            Kedelai mengandung delapan asam amino essensial yang diperlukan bagi
-            pertumbuhan dan meningkatkan kecerdasan anak.
-          </p>
-          <button>Selengkapnya</button>
-        </div>
-      </div>
-
-      <div class="food-items">
-        <img src="/images/menu/Picture3.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Bubur Susu Kacang Hijau</h5>
-          </div>
-          <p>
-            Kacang kacangan, termasuk kacang hijau merupakan sumber protein yang
-            sangat tinggi. Di dalam kacang hijau juga terkandung berbagai
-            vitamin dan mineral, seperti zat besi dan magnesium.
-          </p>
-          <button>Selengkapnya</button>
-        </div>
-      </div>
-
-      <div class="food-items">
-        <img src="/images/menu/Picture4.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Bubur Susu Kacang Merah</h5>
-          </div>
-          <p>
-            Kacang merah sangat baik untuk buah hati karena mengandung mineral
-            fosfor yang tinggi. Fosfor bermanfaat untuk menjaga Kesehatan tulang
-            dan gigi.
-          </p>
-          <button>Selengkapnya</button>
-        </div>
-      </div>
-
-      <div class="food-items">
-        <img src="/images/menu/Picture5.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Bubur Singkong Isi Ikan dan Ayam dengan Saus Jeruk</h5>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <button>Selengkapnya</button>
-        </div>
-      </div>
-
-      <div class="food-items">
-        <img src="/images/menu/Picture6.jpg" />
-        <div class="details">
-          <div class="details-sub">
-            <h5>Tim Bubur Manado Daging dan Udang</h5>
-          </div>
-          <p>
-            Jagung sangat baik untuk saluran cerna, menjaga Kesehatan tulang dan
-            gigi serta membangun massa otot.Daging ayam juga memiliki kandungan
-            zink yang tinggi dan diperlukan dalam berbagai metabolisme penting
-            tubuh.
-          </p>
-          <button>Selengkapnya</button>
-        </div>
-      </div>
-    </div>
+    <div class="menu" id="menu-content"></div>
 
     <!-- script -->
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/menu-sehat.js"></script>
+    <script>
+      console.log(menus);
+      var container = document.querySelector("#menu-content");
+
+      function addMenu(menu) {
+        var html = `<div class="food-items">
+        <img src="${menu.path}" />
+        <div class="details">
+          <div class="details-sub">
+            <h5>${menu.judul}</h5>
+          </div>
+          <p>
+            ${menu.highlight}
+          </p>
+          <button
+            class="button"
+            onclick="window.location.href='read-menu.html?${menu.id}'"
+          >
+            Selengkapnya
+          </button>
+        </div>
+      </div>`;
+        container.insertAdjacentHTML("beforeend", html);
+      }
+
+      for (let menu of menus) {
+        addMenu(menu);
+      }
+    </script>
   </body>
 </html>
