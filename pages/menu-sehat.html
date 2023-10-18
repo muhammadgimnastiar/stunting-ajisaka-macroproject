@@ -7,6 +7,7 @@
     <!-- Mengubungkan ke file css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/menu.css">
     <!-- Fonts inter -->
     <link
       href="http://fonts.googleapis.com/css?family=Signika"
@@ -17,7 +18,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary"
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow border-bottom border-primary"
       aria-label="Offcanvas navbar large"
     >
       <div class="container-fluid mx-lg-4 m-sm-0">
@@ -66,7 +67,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Menu Sehat
+                  Komunitas
                 </a>
                 <ul class="dropdown-menu">
                   <li>
@@ -112,7 +113,108 @@
     <!-- End nav bar -->
 
     <!-- Content -->
+    <div class="container">
+      <!-- Title and sub title halaman -->
+      <div class="row py-lg-6">
+        <div class="col-12 col-md-6 pt-5">
+          <h1 class="fw-bolder title">Menu Sehat</h1>
+          <h5 class="pb-5">Pilihan menu sehat untuk buah hati Anda</h5>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row mt-5 p-2 bg-secondary bg-opacity-25 rounded-2">
+            <div class="col-7 lh-lg text-black fw-semibold">
+              Cari diskusi berdasarkan kata kunci :
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"
+                  ><img src="/images/icons/search.png" alt=""
+                /></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="search"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Menu -->
+    <div class="menu">
+      <div class="food-items">
+        <img src="/images/menu/Picture1.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Bubur Susu Alpukat</h5>
+          </div>
+          <p>Alpukat merupakan sumber serat, vitamin C, vitamin A, dan vitamin E yang baik untuk meningkatkan sistem kekebalan tubuh. Dibandingkan dengan buah-buahan lain untuk MPASI, alpukat dianggap memiliki nilai gizi tertinggi.</p>
+          <button class="button"
+          onclick="window.location.href='alpukat.html'">Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="food-items">
+        <img src="/images/menu/Picture2.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Bubur Susu Kedelai</h5>
+          </div>
+          <p>Kedelai mengandung delapan asam amino essensial yang diperlukan bagi pertumbuhan dan meningkatkan kecerdasan anak.</p>
+          <button>Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="food-items">
+        <img src="/images/menu/Picture3.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Bubur Susu Kacang Hijau</h5>
+          </div>
+          <p>Kacang kacangan, termasuk kacang hijau merupakan sumber protein yang sangat tinggi. Di dalam kacang hijau juga terkandung berbagai vitamin dan mineral, seperti zat besi dan magnesium.</p>
+          <button>Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="food-items">
+        <img src="/images/menu/Picture4.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Bubur Susu Kacang Merah</h5>
+          </div>
+          <p>Kacang merah sangat baik untuk buah hati karena mengandung mineral fosfor yang tinggi. Fosfor bermanfaat untuk menjaga Kesehatan tulang dan gigi.</p>
+          <button>Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="food-items">
+        <img src="/images/menu/Picture5.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Bubur Singkong Isi Ikan dan Ayam dengan Saus Jeruk</h5>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <button>Selengkapnya</button>
+        </div>
+      </div>
+
+      <div class="food-items">
+        <img src="/images/menu/Picture6.jpg">
+        <div class="details">
+          <div class="details-sub">
+            <h5>Tim Bubur Manado Daging dan Udang</h5>
+          </div>
+          <p>Jagung sangat baik untuk saluran cerna, menjaga Kesehatan tulang dan gigi serta membangun massa otot.Daging ayam juga memiliki kandungan zink yang tinggi dan diperlukan dalam berbagai metabolisme penting tubuh.</p>
+          <button>Selengkapnya</button>
+        </div>
+      </div>
+
+    </div>
+    
     <!-- script -->
     <script src="/js/bootstrap.bundle.min.js"></script>
   </body>

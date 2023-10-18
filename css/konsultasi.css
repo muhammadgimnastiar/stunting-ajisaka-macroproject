@@ -92,7 +92,6 @@ h1{
     margin-bottom: 20px;
     padding: 15px 0;
     grid-column: 1/-1;
-    grid-row-start: 5;
     background-color: #C0C0C0;
     border: none;
     border-radius: 15px;
