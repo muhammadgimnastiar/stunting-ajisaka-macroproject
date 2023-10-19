@@ -129,7 +129,7 @@
                   <label for="validationServer04" class="form-label"
                     >Jenis Kelamin</label
                   >
-                  <select class="form-select" id="validationServer04" required>
+                  <select class="form-select" id="kelamin" required>
                     <option selected disabled value="">Pilih...</option>
                     <option value="pria">Laki-laki</option>
                     <option value="perempuan">Perempuan</option>
@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="col-12">
-                  <button class="btn btn-success" type="submit">Submit</button>
+                  <button class="btn btn-success" id="submit">Submit</button>
                 </div>
               </form>
             </div>
@@ -269,5 +269,13 @@
 
     <!-- script -->
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var btn_submit = document.querySelector("#submit");
+      btn_submit.addEventListener("click", () => {
+        var kelamin = document.querySelector("#kelamin");
+        console.log("Gimans");
+        console.log(kelamin);
+      });
+    </script>
   </body>
 </html>
